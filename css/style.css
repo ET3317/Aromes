@@ -5,6 +5,9 @@
     --light: #F5F8F2;
     --dark: #252C30;
 }
+*{
+    cursor:default;
+}
 
 .back-to-top {
     position: fixed;
