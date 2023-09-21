@@ -25,7 +25,7 @@ $plainTextBody .= $message;
 $recipientName = "Aromes";
 
 // Recipient email. Change this email to your
-$recipientEmail = "aromes.jus@gmail.com";
+$recipientEmail = "arome.jus@gmail.com";
 
 // Initiate PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -74,10 +74,10 @@ try {
     $mail->send();
     
     // Passing success message with "success" status
-    echo json_encode(array('status' => 'success', 'message' => 'Email has been sent successfully!'));
+    echo json_encode(array('status' => 'success', 'message' => 'Votre email a bien été envoyé!'));
 } catch (Exception $e) {
     // Passing error message with "error" status
-    echo json_encode(array('status' => 'error', 'message' => 'Email could not be sent. ' . $mail->ErrorInfo));
+    echo json_encode(array('status' => 'error', 'message' => 'L\'Email n\'a pas pu être envoyé. ' . $mail->ErrorInfo));
 }
 
 ?>
