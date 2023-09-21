@@ -48,7 +48,7 @@ if ($useSMTP) {
     $mail->Host = 'smtp-relay.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'etienne.jouault5@gmail.com';
-    $mail->Password = 'Etienne-1964!';
+    $mail->Password = 'ucia smou wugw hlqb';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 } else {
