@@ -22,7 +22,7 @@ $plainTextBody .= "Subject: $subject\n";
 $plainTextBody .= $message;
 
 // Recipient name. Change this name to your
-$recipientName = "Arômes";
+$recipientName = "Aromes";
 
 // Recipient email. Change this email to your
 $recipientEmail = "etienne.jouault@live.fr";
@@ -40,15 +40,15 @@ $mail = new PHPMailer(true);
 
 // Set mailer to use SMTP or PHP's mail() function
 // If you use SMTP, it will be "true". Otherwise, it will be "false"
-$useSMTP = true;
+$useSMTP = false;
 
 if ($useSMTP) {
     // Server settings for SMTP
     $mail->isSMTP();
-    $mail->Host = 'smtp-relay.gmail.com';
+    $mail->Host = 'smtp.example.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'etienne.jouault5@gmail.com';
-    $mail->Password = 'ucia smou wugw hlqb';
+    $mail->Username = 'user@example.com';
+    $mail->Password = 'secret';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 } else {
