@@ -43,7 +43,10 @@
     visibility: visible;
     opacity: 1;
 }
-
+.spinner-border{
+    width: 3rem;
+    height: 3rem;
+}
 
 /*** Button ***/
 .btn {
@@ -165,7 +168,7 @@
 }
 
 
-/*** Header ***/
+/*** HOME PAGE HEADER ***/
 .carousel-caption {
     top: 0;
     left: 0;
@@ -173,10 +176,11 @@
     bottom: 0;
     display: flex;
     align-items: center;
-    background: rgba(136, 180, 78, .7);
+    /*background: rgba(136, 180, 78, .7);*/
     z-index: 1;
 }
 
+/*
 .carousel-control-prev,
 .carousel-control-next {
     width: 15%;
@@ -190,23 +194,43 @@
     background-color: var(--dark);
     border: 15px solid var(--dark);
 }
-
+*/
+.header-container-phone{
+    display: none;
+}
+.picture-header-phone{
+    display: none;
+}
 @media (max-width: 768px) {
-    #header-carousel .carousel-item {
+ /*   #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }*/
+    #carousel-template{
+        display: none;
+    }
+    .header-container-phone{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .picture-header-phone{
+        display: block;
+        height:60vh;
+        width:90vw;
+        border-radius:22px
     }
 }
-
+/* PAGES HEADER*/
 .page-header {
-    background: linear-gradient(rgba(136, 180, 78, .7), rgba(136, 180, 78, .7)), url("../img/ar-home3.jpeg") center center no-repeat;
+    background: linear-gradient(rgba(136, 180, 78, .7), rgba(136, 180, 78, .7)), url("/img/ar-home3.jpeg") center center no-repeat;
     background-size: cover;
 }
 
@@ -409,4 +433,10 @@
 
 .copyright a:hover {
     color: #FFFFFF !important;
+}
+.home-page{
+    background-image: url("../img/ar-street.jpeg");
+    width:100vw;
+    height:90vh;
+    background-size: inherit;
 }
