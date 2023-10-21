@@ -49,7 +49,7 @@ include 'includes/navbar.html'
     <!-- Carousel End -->
     <!-- Responsive Header -->
     <div class="header-container-phone">
-        <img class="picture-header-phone" src="../img/arome-collage.png" alt="">
+        <img class="picture-header-phone" src="img/arome-collage.png" alt="">
     </div>
     <!-- End Responsive Header -->
 
